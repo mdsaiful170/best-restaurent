@@ -16,7 +16,6 @@ const Header = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedStar, setSelectedStar] = useState(null);
   const [suggestion, setShowSuggestions] = useState(false);
-
   const [cartdata, setdata] = useState([]);
   const [loading, setloading] = useState(true);
   const [error, seterror] = useState("");
