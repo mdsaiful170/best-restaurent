@@ -84,7 +84,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-center pt-10 pb-4">
+          <div className="text-center pt-10 pb-5">
             <p className="font-semibold text-sm text-heading text-wrap">
               Copyright <Copyright className="inline-block" size={16} /> Septembre{" "}
               {new Date().getUTCFullYear().toLocaleString()} myfeedback,
