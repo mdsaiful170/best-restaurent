@@ -50,7 +50,7 @@ const Resultcart = () => {
                     : "text-secondary"
                 }`
               }
-              to={"/result"}
+              to={"/result?"}
             >
               All Restaurant
             </NavLink>

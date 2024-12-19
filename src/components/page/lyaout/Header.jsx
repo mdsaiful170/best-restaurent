@@ -16,6 +16,7 @@ const Header = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedStar, setSelectedStar] = useState(null);
   const [suggestion, setShowSuggestions] = useState(false);
+
   const [cartdata, setdata] = useState([]);
   const [loading, setloading] = useState(true);
   const [error, seterror] = useState("");
@@ -43,7 +44,7 @@ const Header = () => {
   // Navigate to results page with filtered carts
   const handleShowResults = () => {
     localStorage.setItem("filteredCarts", JSON.stringify(filteredCarts));
-    navigate("/result");
+    navigate("/result?");
   };
 
   const fetchData = async () => {
