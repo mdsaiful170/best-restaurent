@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply !overflow-x-hidden !scroll-smooth !scroll-pt-7;
+  }
+  body {
+    @apply font-rohoob box-border overflow-x-hidden !transition-all !duration-150  outline-none;
+  }
+  p {
+    @apply text-base font-normal text-secondary;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-heading  font-lexend;
+  }
+  section {
+    @apply px-3  py-8;
+  }
+}
+
+@layer utilities {
+  @media (min-width: 250px) {
+    html {
+      font-size: 65%;
+    }
+  }
+  @media (min-width: 375px) {
+    html {
+      font-size: 80%;
+    }
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 94%;
+    }
+  }
+  @media (min-width: 991px) {
+    html {
+      font-size: 100%;
+    }
+  }
+}
+.swiper-pagination-bullet {
+  width: 0.8rem !important;
+  margin: 0 0.2rem !important;
+  height: 0.8rem !important;
+  background-color: #ffffff !important;
+}
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+  background-color: #18f5f5 !important;
+}
+
